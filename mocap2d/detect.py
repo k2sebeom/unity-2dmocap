@@ -1,4 +1,3 @@
-#!python
 import argparse
 from glob import glob
 import json
@@ -10,7 +9,7 @@ import cv2
 from mocap2d import BoneDetector
 
 
-if __name__ == '__main__':
+def main():
     warnings.filterwarnings("ignore", category=UserWarning)
     parser = argparse.ArgumentParser(
         description="Unity extension for 2D motion capture asset"
