@@ -9,14 +9,14 @@ def read(fname):
 
 setup(
     name='unity-2dmocap',
-    version='0.1.0',
+    version='0.1.1',
     description="Python application for Unity Asset of 2D motion capture",
     long_description=read('README.md'),
     author='SeBeom Lee',
     author_email='slee5@oberlin.edu',
     url='http://www.github.com/k2sebeom/unity-2dmocap',
     license="MIT",
-    scripts=['2dmocap-unity.py'],
+    scripts=['2dmocap-unity'],
     install_requires=read('requirements.txt').splitlines(),
     packages=find_packages(include=['mocap2d']),
     classifiers=[
