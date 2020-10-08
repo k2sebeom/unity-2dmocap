@@ -1,5 +1,6 @@
 import os
 from setuptools import setup, find_packages
+import mocap2d
 
 
 def read(fname):
@@ -9,14 +10,20 @@ def read(fname):
 
 setup(
     name='unity-2dmocap',
-    version='0.1.0',
+    version=mocap2d.__version__,
     description="Python application for Unity Asset of 2D motion capture",
     long_description=read('README.md'),
+    keywords=["python", "motion capture", "unity"],
     author='SeBeom Lee',
     author_email='slee5@oberlin.edu',
     url='http://www.github.com/k2sebeom/unity-2dmocap',
     license="MIT",
-    scripts=['2dmocap-unity.py'],
+    entry_points={
+        'console_scripts': [
+            "2dmocap-unity=mocap2d.detect:main",
+            "2dmocap-edit=mocap2d.editor:main"
+        ]
+    },
     install_requires=read('requirements.txt').splitlines(),
     packages=find_packages(include=['mocap2d']),
     classifiers=[
