@@ -21,7 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             "2dmocap-unity=mocap2d.detect:main",
-            "2dmocap-edit=mocap2d.edit:main"
+            "2dmocap-edit=mocap2d.editor:main"
         ]
     },
     install_requires=read('requirements.txt').splitlines(),
