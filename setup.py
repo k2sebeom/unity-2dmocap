@@ -13,6 +13,7 @@ setup(
     version=mocap2d.__version__,
     description="Python application for Unity Asset of 2D motion capture",
     long_description=read('README.md'),
+    keywords=["python", "motion capture", "unity"],
     author='SeBeom Lee',
     author_email='slee5@oberlin.edu',
     url='http://www.github.com/k2sebeom/unity-2dmocap',
