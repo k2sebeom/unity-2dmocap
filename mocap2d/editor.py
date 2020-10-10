@@ -36,9 +36,9 @@ def main():
 
     def get_image():
         image = frames[curr]
-        image = cv2.resize(image, frame_shape)
         for _ in range(rotate % 4):
             image = cv2.rotate(image, cv2.ROTATE_90_CLOCKWISE)
+        image = cv2.resize(image, frame_shape)
         return image
 
     def show_image():
