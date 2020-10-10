@@ -14,6 +14,8 @@ With this application, you can easily build a sophisticated animation clip for
 your Unity project without any need of special equipments, and once the animation is
 generated, you can freely modify the clips the same way you deal with generic Unity animation.
 
+<img src="https://github.com/k2sebeom/unity-2dmocap/blob/master/src/sample.gif?raw=true" align=center></img>
+
 ### Features
 * Commandline tool for video analysis and a direct connection to Unity Project
 * Simple video editor used for preparation of source video
