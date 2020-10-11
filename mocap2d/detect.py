@@ -64,7 +64,10 @@ def send(args):
     print(f"Retrieving data from {args.file[0]}")
     bone_list = []
     with open(args.file[0], 'r') as json_file:
-        bone_list.append(json_file.readline())
+        line = json_file.readline()
+        while line:
+            bone_list.append(line)
+            line = json_file.readline()
     print("Pose data is ready\n")
     return bone_list
 
@@ -130,7 +133,3 @@ def main():
                 conn.sendall(bone.encode())
                 conn.recv(1024)
         print("Transfer Successful")
-
-
-if __name__ == '__main__':
-    main()
