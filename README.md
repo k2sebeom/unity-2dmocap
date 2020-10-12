@@ -17,7 +17,7 @@ your Unity project without any need of special equipments, and once the animatio
 generated, you can freely modify the clips the same way you deal with generic Unity animation.
 
 <p align="center">
-        <img src="https://github.com/k2sebeom/unity-2dmocap/blob/master/src/Demo.gif?raw=true" width=400>
+        <img src="https://github.com/k2sebeom/unity-2dmocap/blob/master/src/Demo.gif?raw=true" width=500>
 </p>
 
 ### Features
