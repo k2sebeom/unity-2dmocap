@@ -1,4 +1,6 @@
-<img src="https://github.com/k2sebeom/unity-2dmocap/blob/master/src/Banner.PNG?raw=true" align=center></img>
+<p align="center">
+    <img src="https://github.com/k2sebeom/unity-2dmocap/blob/master/src/Banner.PNG?raw=true">
+</p>
 
 2D Motion Capture for Unity
 -------
@@ -14,7 +16,9 @@ With this application, you can easily build a sophisticated animation clip for
 your Unity project without any need of special equipments, and once the animation is
 generated, you can freely modify the clips the same way you deal with generic Unity animation.
 
-<img src="https://github.com/k2sebeom/unity-2dmocap/blob/master/src/sample.gif?raw=true" align=center></img>
+<p align="center">
+        <img src="https://github.com/k2sebeom/unity-2dmocap/blob/master/src/sample.gif?raw=true" width=400>
+</p>
 
 ### Features
 * Commandline tool for video analysis and a direct connection to Unity Project
@@ -41,7 +45,3 @@ $ python
 >>> mocap2d.__version__
 ```
 If it prints out something without an error, the application is installed properly.
-
-### Usage
-
-

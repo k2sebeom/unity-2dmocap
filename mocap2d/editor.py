@@ -11,15 +11,14 @@ global rotate, curr, frame_shape
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('-f', '--file', dest="file", required=True, nargs=1,
-                        help="Path to the video file", type=str)
+    parser.add_argument('file', help="Path to the video file", type=str)
     args = parser.parse_args()
 
-    if not glob(args.file[0]):
-        print(f"Video file at {args.file[0]} not found.")
+    if not glob(args.file):
+        print(f"Video file at {args.file} not found.")
         exit(1)
 
-    video = cv2.VideoCapture(args.file[0])
+    video = cv2.VideoCapture(args.file)
     fps = video.get(cv2.CAP_PROP_FPS)
     frames = []
     while True:
