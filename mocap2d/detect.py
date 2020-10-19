@@ -33,11 +33,16 @@ def detect(args):
     print("Start processing the motion capture")
     bone_list = []
     print(f"[>{'.' * 50}] 0%\r", end='')
+
+    pos0 = None
     for idx in range(frame_count):
         ret, frame = video.read()
 
         if idx % fpi == 0:
-            bones = detector.extract_bone(frame, args.show)
+            bones, pos = detector.extract_bone(frame, args.show)
+            if pos0 is None:
+                pos0 = pos
+            print(f"{pos[0] - pos0[0]}, {pos[1] - pos0[1]}")
             bones["timestamp"] = round(idx / fps, 3)
             bone_list.append(json.dumps(bones))
             curr = 50 * idx // frame_count
@@ -133,3 +138,7 @@ def main():
                 conn.sendall(bone.encode())
                 conn.recv(1024)
         print("Transfer Successful")
+
+
+if __name__ == '__main__':
+    main()
