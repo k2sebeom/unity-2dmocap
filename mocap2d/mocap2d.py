@@ -43,7 +43,10 @@ class BoneDetector:
             k1, k2 = keys
             skeleton[f"bone{idx + 1}"] = self._get_bone_vector(
                 points[k1], points[k2])
-        return skeleton, points[17]
+        pt1 = points[17]
+        pt2 = points[18]
+        ref = np.sqrt((pt1[0] - pt2[0])**2 + (pt1[1] - pt2[1])**2)
+        return skeleton, points[17], ref
 
     def _draw_human(self, image, points):
         for pt1, pt2 in self.__BONES:
