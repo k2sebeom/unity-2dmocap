@@ -17,7 +17,7 @@ your Unity project without any need of special equipments, and once the animatio
 generated, you can freely modify the clips the same way you deal with generic Unity animation.
 
 <p align="center">
-    <img src="https://github.com/k2sebeom/unity-2dmocap/raw/master/src/Demo.gif?raw=true" width=500>
+    <img src="https://github.com/k2sebeom/unity-2dmocap/raw/master/src/sample.gif?raw=true" width=500>
 </p>
 
 ### Features
@@ -86,7 +86,7 @@ $ 2dmocap-unity detect --file=ballet.mp4 --gpu --interval=0.2
 Once you type the command, the program will initiate the analysis as follows.
 
 <p align="center">
-    <img src="https://github.com/k2sebeom/unity-2dmocap/raw/master/src/usage/1.png?raw=true"
+    <img src="https://github.com/k2sebeom/unity-2dmocap/raw/master/src/usage/1.png?raw=true">
 </p>
 
 You can wait until the analysis is over, and if you used the argument -s or --show, 
@@ -95,7 +95,7 @@ on the original image. After the analysis is complete, the program will address 
 the Unity project.
 
 <p align="center">
-    <img src="https://github.com/k2sebeom/unity-2dmocap/raw/master/src/usage/2.png?raw=true"
+    <img src="https://github.com/k2sebeom/unity-2dmocap/raw/master/src/usage/2.png?raw=true">
 </p>
 
 To connect to your Unity project, open your project on the Unity editor. If you have have 
@@ -103,13 +103,13 @@ successfully imported the "2D Motion Capture" asset, the menu will appear on
 Window/2D Motion Capture.
 
 <p align="center">
-    <img src="https://github.com/k2sebeom/unity-2dmocap/raw/master/src/usage/3.png?raw=true"
+    <img src="https://github.com/k2sebeom/unity-2dmocap/raw/master/src/usage/3.png?raw=true">
 </p>
 
 If you click on the menu, the following editor window will show up. 
 
 <p align="center">
-    <img src="https://github.com/k2sebeom/unity-2dmocap/raw/master/src/usage/4.png?raw=true"
+    <img src="https://github.com/k2sebeom/unity-2dmocap/raw/master/src/usage/4.png?raw=true">
 </p>
 
 As addressed by the program, if you click on "Connect to the Detector" button, the unity will
@@ -118,7 +118,7 @@ the window will let you preview the generated animation. If you click on the but
 the generated animation clip will be saved to the directory you specify.
 
 <p align="center">
-    <img src="https://github.com/k2sebeom/unity-2dmocap/raw/master/src/usage/5.png?raw=true"
+    <img src="https://github.com/k2sebeom/unity-2dmocap/raw/master/src/usage/5.png?raw=true">
 </p>
 
 Once the animation is generated, you can edit the clip just the same way you
