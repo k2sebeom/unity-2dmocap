@@ -49,7 +49,9 @@ If it prints out something without an error, the application is installed proper
 ### Unity Asset
 
 To use this package, you need a 2D Motion Capture asset, which is a counterpart of 
-this package. You can find the asset in the Unity Asset Store.
+this package. You can download the package below.
+
+[2d_motion_capture.unitypackage](./2d_motion_capture.unitypackage)
 
 ### Usage
 
